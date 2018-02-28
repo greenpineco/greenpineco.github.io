@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0c0">
+
+    <title>Unlimited web development support service - Green Pine Co.</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:300,400,700|Roboto+Mono:400,400i,700" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Roboto Mono', monospace;
+
+        /* border-top: 5px solid #0c0; */
+        transition: all 0.5s ease;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      h1, h2, h3, h4, h5, h6,
+      .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+
+      h3, h4, h5, h6,
+      .h3, .h4, .h5, .h6 {
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+
+      header .logo {
+        max-width: 80px;
+        width: 100%;
+        display: block;
+      }
+
+      header a,
+      header a:visited {
+        color: #333;
+        margin: 23px 0;
+        color: inherit;
+        font-size: 20px;
+      }
+
+      header a:hover,
+      header a:active {
+        color: #333;
+        text-decoration: underline;
+      }
+
+      section h2 {
+        margin-top: 70px;
+        margin-bottom: 30px;
+      }
+
+      .hero {
+        padding: 120px 0 110px;
+        background-image: -webkit-linear-gradient(rgba(255,255,255,0) 60%, #fff),-webkit-linear-gradient(340deg, #0c0 32%, #ebfff0);
+        background-image: -o-linear-gradient(rgba(255,255,255,0) 60%, #fff),-o-linear-gradient(340deg, #0c0 32%, #ebfff0);
+        background-image: linear-gradient(rgba(255,255,255,0) 60%, #fff),linear-gradient(70deg, #0c0 32%, #ebfff0);
+      }
+
+      .hero .label-default {
+        background-color: #333;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        color: #fff;
+        padding: 5px;
+        display: inline-block;
+        font-size: 1em;
+      }
+
+      .hero h1 {
+        font-size: 3.5em;
+      }
+
+      .hero .cta-list {
+        padding-top: 30px;
+
+      }
+
+      .hero .cta-list ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hero .cta-list li:before {
+        content: '?';
+        background-color: #fff;
+        padding: 1px 7px;
+        border-radius: 7px;
+        box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero .cta-list li {
+        line-height: 2em;
+        font-size: 1.1em;
+        list-style: none;
+      }
+
+      .hero .cta-list .btn-cta {
+        background-color: #fff;
+        color: inherit;
+        font-size: 1.3em;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        margin: 30px 0 0;
+
+        user-select: none;
+        transition: all 0.5s ease;
+      }
+
+      .hero .cta-list .btn-cta:hover,
+      .hero .cta-list .btn-cta:active {
+        box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .tag {
+        padding-bottom: 30px;
+      }
+
+      .tag h2 {
+        text-align: center;
+      }
+
+      .how {
+        padding: 0 0 70px;
+        background-color: #edfff1;
+      }
+
+      .how p {
+        font-size: 14px;
+        color: #888;
+        padding: 10px 0 0;
+      }
+
+      @media (max-width: 768px) {
+        .how .col-sm-4 h4 {
+          margin-top: 25px;
+        }
+
+        .how .col-sm-4:first-of-type h4 {
+          margin: 0;
+        }
+
+        .how p {
+          padding: 5px 0;
+        }
+      }
+
+      .why {
+        margin-bottom: 60px;
+      }
+
+      .why strong:before {
+        content: '>>';
+        margin-right: 5px;
+        font-weight: 700;
+        color: #0c0;
+      }
+      .why p {
+        margin-bottom: 25px;
+      }
+
+      .why p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .why ul {
+        margin: 0 0 30px;
+        padding: 0;
+      }
+
+      .why li {
+        list-style: none;
+        margin: 10px 0;
+      }
+
+      .why li:before {
+        content: '✓';
+        margin-right: 5px;
+        font-weight: 700;
+        color: #0c0;
+      }
+
+      .pricing {
+        margin-bottom: 60px;
+      }
+
+      .pricing .col-sm-* {
+        padding: 0 15px
+      }
+
+      .pricing .plan {
+        margin-top: 50px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+      }
+
+      .pricing .basic .plan__header {
+        border-top: 5px solid #0c0;
+        border-radius: 3px;
+      }
+
+      .pricing .plan__header {
+        text-align: center;
+        height: 130px;
+        padding: 30px;
+      }
+
+      .pricing .plan__name {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .pricing .plan__desc {
+        display: block;
+        color: #888;
+      }
+
+      .pricing .plan .plan__price {
+        background-color: #f5f7f8;
+        padding: 25px 30px;;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .pricing .plan .plan__price span {
+        position: relative;
+      }
+
+      .pricing .plan .plan__price span::before,
+      .pricing .plan .plan__price span::after {
+        position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .pricing .plan .plan__price span::before {
+        content: 'USD';
+        top: 4px;
+        right: 90px;
+      }
+
+      .pricing .plan .plan__price span::after {
+        content: '/month';
+        top: 16px;
+        right: -50px;
+      }
+
+      .pricing .plan .plan__content {
+        padding: 30px;;
+        text-align: center;
+      }
+
+      .pricing .plan .plan__content ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .pricing .plan .plan__content li {
+        list-style: none;
+        margin: 0 0 15px;
+      }
+
+      .faqs {
+        background-color: #edfff1;
+        padding-bottom: 30px;
+      }
+
+      .faqs .question {
+        border-left: 5px solid #0c0;
+        padding-left: 15px;
+        margin-bottom: 30px;
+      }
+
+      .faqs .question:nth-of-type(2n) {
+        border-left: 5px solid #888;
+      }
+
+      .trust {
+        background-color: #edfff1;
+        padding-bottom: 80px;
+      }
+
+      .trust .logo {
+        display: block;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .trust .logo.logo-bb {
+        background-image: url(images/bb.png);
+      }
+
+      .trust .logo.logo-k2 {
+        background-image: url(images/k2digital.png);
+      }
+
+      .trust .logo.logo-klick {
+        background-image: url(images/klick.png);
+      }
+
+      .trust .logo.logo-om {
+        background-image: url(images/om.svg);
+        background-color: #000;
+        background-size: 80%;
+      }
+
+      footer {
+        background-color: #edfff1;
+        border-bottom: 5px solid #0c0;
+      }
+
+      @media (max-width: 768px) {
+        .trust .logo {
+          max-width: 50%;
+          margin: 0 auto 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/green-pine-text.png" alt="" class="logo pull-left">
+
+        <a href="#faqs" class="pull-right">FAQs</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <span class="label label-default">Available March 2018</span>
+
+        <h1>
+          Unlimited web development support <br>
+          for your agency / development studio
+        </h1>
+
+        <div class="cta-list">
+          <ul>
+            <li>
+              Do you lack the in-house expertise to fix and maintain a legacy code base ?
+            </li>
+            <li>
+              Are your developers too busy or spending too much time on fixing bugs than new projects?
+            </li>
+            <li>
+              Wish you could delegate web maintenance tasks and bug fixing to someone else ?
+            </li>
+          </ul>
+
+          <div>
+            <a href="#pricing" class="btn btn-cta">Yes! I want this now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tag">
+      <div class="container">
+        <h2>We'll take care of your projects, so you can get back to building the products that actually generate revenue.</h2>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container">
+        <h2>Trusted by the awesome teams at:</h2>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <span class="logo logo-klick"></span>
+          </div>
+          <div class="col-sm-3">
+            <span class="logo logo-k2"></span>
+          </div>
+          <div class="col-sm-3">
+            <span class="logo logo-bb"></span>
+          </div>
+          <div class="col-sm-3">
+            <span class="logo logo-om"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <h2>Why do I need this ?</h2>
+
+        <p>
+          <strong>I can pull my developers off their current projects to fix and maintain our projects.</strong>
+          <br>
+          Not unless you have spare developers available and no product roadmap or targets to hit this year.
+        </p>
+
+        <p>
+          <strong>I can find another freelancer to help</strong>
+          <br>
+          Unlikely. Good freelancers are both expensive and booked at least 2-3 months out. And they don't like small jobs (more money in a large project).
+        </p>
+
+        <p>
+          <strong>Can't I hire an in-house web developer to manage it?</strong>
+          <br>
+          Even if you could hire a good developer, is there even enough work to justify the cost of finding and hiring a full time developer?
+        </p>
+
+        <p class="lead">
+          You need someone who can provide preemptive, rapid, continual, and measurable improvements to your exisiting projects.
+        </p>
+
+        <p>
+          Without nagging the original developers. Without creating further damage to your client's brand. Without derailing your in-house developers. Without having to hire a web developer.
+        </p>
+
+        <p>You need someone who can:</p>
+        <ul>
+          <li>Take the burden of maintaining web projects off your mind.</li>
+          <li>Handle tweaks and fixes immediately.</li>
+          <li>Proactively address issues before they become problems.</li>
+          <li>Replace that lingering frustration of growing technical debt with renewed hope!</li>
+        </ul>
+
+        <p>
+          You need our reliable team.
+        </p>
+      </div>
+    </section>
+
+    <section class="how">
+      <div class="container">
+        <h2>How does it work?</h2>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Sign up</h4>
+
+            <p>
+              Choose from one of our plans, and we'll onboard you and assign dedicated developer(s) to your account.
+            </p>
+          </div>
+
+          <div class="col-sm-4">
+            <h4>Submit your requests</h4>
+
+            <p>Submit your tasks and the developer(s) will get to work straight away.</p>
+          </div>
+
+          <div class="col-sm-4">
+            <h4><span>Profit!</span></h4>
+
+            <p>
+              Now you can focus on your delivering value to your clients instead
+              stressing over fixing and maintaining their web projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2>How much will it cost?</h2>
+
+        <p class="lead">
+          <strong>We are offering <i>limited launch pricing</i> for customers who signup before March 15, 2018.<sup><a href="#1">[1]</a></sup></strong>
+        </p>
+
+        <p>Prices will go up in the future, but you will keep whatever rate you came in on for the length of our relationship.</p>
+
+        <p>
+          <strong>
+            Sign up, try us out for 15 days and if we don't exceed your expectations, get a full refund and keep the improvements we made.
+          </strong>
+        </p>
+
+        <p class="lead">
+          <strong>
+            Email us at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> with your contact information and availability to schedule a consultation.
+          </strong>
+        </p>
+
+      </div>
+    </section>
+
+    <section class="faqs" id="faqs">
+      <div class="container">
+        <h2>FAQs</h2>
+
+        <div class="question">
+          <p><strong>Again, Why ?</strong></p>
+
+          <p>We want to help you get more work done, quicker, and better. We aim to bring Productivity up and Errors down. End goal -- your team and your clients are happier.</p>
+        </div>
+
+        <div class="question" id="1">
+          <p><strong>Will you be able to dedicate enough time to our projects?</strong></p>
+
+          <p>We want to provide the best support we can to all our customers. Therefore, we will be taking on limited customers based on our availability.</p>
+        </div>
+
+        <div class="question" id="1">
+          <p><strong>Will you sign a NDA?</strong></p>
+
+          <p>Probably, if it's fairly standard. Email us at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> and we can discuss this further.</p>
+        </div>
+
+        <div class="question" id="1">
+          <p><strong>Will you sign our contract / work-for-hire / IP assignment, etc documents?</strong></p>
+
+          <p>No. Our service is bound by the following <a href="terms.html">terms & conditions</a>, which we believe should cover your concerns in terms of who owns what, liability, etc. (If not, please feel free to contact us about the issue you're worried about.)</p>
+        </div>
+
+        <div class="question">
+          <p><strong>Do I have to commit to a contract on the monthly plan?</strong></p>
+
+          <p>No, you can cancel anytime. There are no contracts to sign, setup fees or cancellation fees. </p>
+        </div>
+
+        <div class="question">
+          <p><strong>Can I change my plan after I sign up?</strong></p>
+
+          <p>Absolutely! You can upgrade or downgrade your subscription plan at any time.</p>
+        </div>
+
+        <div class="question">
+          <p><strong>What is covered under bug fixes and maintenance?</strong></p>
+
+          <p>
+            Bug fixes are changes made to existing code to correct an unintended behaviour.
+          </p>
+          <p>
+            Maintenance can cover tasks like adding documentation, code cleanup, fixing API integrations, upgrade or replace a 3rd party library,  scheduled upgrades to frontend/backend application frameworks, CSS style fixes, copy updates, updating ssl certificates, fixing cross browser issues, testing backups, and more.
+          </p>
+          <p>
+            If you are unsure if something is covered under these categories please submit a request anyway and we will promptly let you know.
+          </p>
+        </div>
+
+        <div class="question">
+          <p><strong>What languages / frameworks do you work with?</strong></p>
+
+          <p>
+            We support most PHP & JavaScript based libraries, frameworks, and CMSs. You can reach out to us at <a href="mail:dev@greenpine.co" target="_blank">dev@greenpine.co</a> if you want to confirm if your projects are covered.
+          </p>
+        </div>
+
+        <div class="question">
+          <p><strong>Can you develop new functionality?</strong></p>
+
+          <p>
+            Sure, If you need the odd piece of ad-hoc work doing, we just book it in to our next free slot.
+          </p>
+
+          <p>If you have a larger volume of requests then we can agree a set number of days per month and these get placed into our schedule first, ensuring that we are always working on the project month on month.</p>
+        </div>
+
+        <div class="question" id="3">
+          <p><strong>Can I get my money back if I do not like the service?</strong></p>
+
+          <p>
+            Yup! We have a 15-days, 100% money back guarantee, no questions asked.
+          </p>
+        </div>
+
+        <div class="question">
+          <p><strong>Where are you based?</strong></p>
+
+          <p>
+            We are based in Kitchener, Ontario, Canada 🍁.
+          </p>
+        </div>
+
+        <div class="question">
+          <p><strong>Can you invoice me instead of having a credit card on file?</strong></p>
+
+          <p>
+            Yes, but only if you pre-pay for a year.
+          </p>
+        </div>
+
+        <div class="question">
+          <p><strong>I have more questions, how can I contact you?</strong></p>
+
+          <p>
+            Feel free to send us an email at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> - we will reply within 24 hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted text-center">&copy; Green Pine Co. 2018 🚀</p>
+      </div>
+    </footer>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('93trbe9vaxys');
+    </script>
+    <!-- End of Async Drift Code -->
+  </body>
+</html>
