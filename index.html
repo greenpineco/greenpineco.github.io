@@ -42,8 +42,6 @@
     <style>
       body {
         font-family: 'Roboto Mono', monospace;
-
-        /* border-top: 5px solid #0c0; */
         transition: all 0.5s ease;
       }
 
@@ -94,10 +92,7 @@
       }
 
       .hero {
-        padding: 120px 0 110px;
-        background-image: -webkit-linear-gradient(rgba(255,255,255,0) 60%, #fff),-webkit-linear-gradient(340deg, #0c0 32%, #ebfff0);
-        background-image: -o-linear-gradient(rgba(255,255,255,0) 60%, #fff),-o-linear-gradient(340deg, #0c0 32%, #ebfff0);
-        background-image: linear-gradient(rgba(255,255,255,0) 60%, #fff),linear-gradient(70deg, #0c0 32%, #ebfff0);
+        padding: 120px 0 60px;
       }
 
       .hero .label-default {
@@ -111,6 +106,7 @@
 
       .hero h1 {
         font-size: 3.5em;
+        color: #0c0;
       }
 
       .hero .cta-list {
@@ -137,15 +133,19 @@
         list-style: none;
       }
 
-      .hero .cta-list .btn-cta {
+      .btn-cta {
         background-color: #fff;
         color: inherit;
         font-size: 1.3em;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-        margin: 30px 0 0;
+        margin: 0;
 
         user-select: none;
         transition: all 0.5s ease;
+      }
+
+      .hero .cta-list .btn-cta {
+        margin-top: 30px;
       }
 
       .hero .cta-list .btn-cta:hover,
@@ -240,10 +240,15 @@
         border-radius: 3px;
       }
 
-      .pricing .plan__header {
+      .pricing .plan__header,
+      .pricing .plan__footer {
         text-align: center;
         height: 130px;
         padding: 30px;
+      }
+
+      .pricing .plan__footer {
+        background-color: #edfff1;
       }
 
       .pricing .plan__name {
@@ -307,6 +312,10 @@
         padding-bottom: 30px;
       }
 
+      .money-back {
+        margin-top: 15px;
+      }
+
       .faqs .question {
         border-left: 5px solid #0c0;
         padding-left: 15px;
@@ -358,6 +367,10 @@
           max-width: 50%;
           margin: 0 auto 1rem;
         }
+      }
+
+      .focus {
+        color: #0c0;
       }
     </style>
   </head>
@@ -480,14 +493,14 @@
             <h4>Sign up</h4>
 
             <p>
-              Choose from one of our plans, and we'll onboard you and assign dedicated developer(s) to your account.
+              Choose from one of our plans, and we'll setup a call to discuss your current projects and walk you through creating your first task.
             </p>
           </div>
 
           <div class="col-sm-4">
             <h4>Submit your requests</h4>
 
-            <p>Submit your tasks and the developer(s) will get to work straight away.</p>
+            <p>Submit your tasks and we will get to work straight away.</p>
           </div>
 
           <div class="col-sm-4">
@@ -512,17 +525,47 @@
 
         <p>Prices will go up in the future, but you will keep whatever rate you came in on for the length of our relationship.</p>
 
-        <p class="lead">
-          <strong>
-            Email us at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> with your contact information and availability to schedule a consultation.
-          </strong>
-        </p>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="plan basic">
+              <!-- <div class="plan__header">
+                <span class="plan__name">Unlimited</span>
+                <span class="plan__desc">
+                  Designed to take the support and maintenance workload off agencies or consultancies.
+                </span>
+              </div> -->
+              <div class="plan__price"><span>$2990</span></div>
+              <div class="plan__content">
+                <ul>
+                  <li>Unlimited Tasks / month</li>
 
-        <p>
-          <strong>
-            Sign up, try us out for 15 days and if we don't exceed your expectations, get a full refund and keep the improvements we made.
-          </strong>
-        </p>
+                  <li>Phone / slack support</li>
+
+                  <li>Available 9am - 8pm ET</li>
+
+                  <li>15 day money back guarantee, try it risk free.</li>
+                </ul>
+              </div>
+              <div class="plan__footer">
+                <a href="mailto:hi@greenpine.co?subject=Unlimited web development support" target="_blank" class="btn btn-cta">Schedule a consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row money-back">
+          <div class="col-sm-4 col-sm-offset-4">
+            <img src="images/money_back_guarantee.png" alt="15 day money back guarantee, try it risk free." class="img-responsive">
+          </div>
+          <div class="col-sm-4 col-sm-offset-4">
+            <p class="text-center">
+              <strong>
+                Sign up, try us out for 15 days and if we don't exceed your expectations, get a full refund and keep the improvements we made.
+              </strong>
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -545,19 +588,13 @@
         <div class="question" id="1">
           <p><strong>Will you sign a NDA?</strong></p>
 
-          <p>Probably, if it's fairly standard. Email us at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> and we can discuss this further.</p>
-        </div>
-
-        <div class="question" id="1">
-          <p><strong>Will you sign our contract / work-for-hire / IP assignment, etc documents?</strong></p>
-
-          <p>Email us at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> and we can discuss this further.</p>
+          <p>Probably, if it's fairly standard. Email us at <a href="mailto:hi@greenpine.co" target="_blank">hi@greenpine.co</a> and we can discuss this further.</p>
         </div>
 
         <div class="question">
           <p><strong>Do I have to commit to a contract on the monthly plan?</strong></p>
 
-          <p>No, you can cancel anytime. There are no contracts to sign, setup fees or cancellation fees. </p>
+          <p>No, you can cancel anytime. There are no contracts to sign, setup fees or cancellation fees.</p>
         </div>
 
         <div class="question">
@@ -567,13 +604,15 @@
         </div>
 
         <div class="question">
-          <p><strong>What is covered under bug fixes and maintenance?</strong></p>
-
+          <p><strong>What is covered under small jobs?</strong></p>
           <p>
             Bug fixes are changes made to existing code to correct an unintended behaviour.
           </p>
           <p>
             Maintenance can cover tasks like adding documentation, code cleanup, fixing API integrations, upgrade or replace a 3rd party library,  scheduled upgrades to frontend/backend application frameworks, CSS style fixes, copy updates, updating ssl certificates, fixing cross browser issues, testing backups, and more.
+          </p>
+          <p>
+            Small jobs are pretty much anything that can be done within a couple of hours to a day. If you do have a larger job we can help you break it down.
           </p>
           <p>
             If you are unsure if something is covered under these categories please submit a request anyway and we will promptly let you know.
@@ -584,7 +623,7 @@
           <p><strong>What languages / frameworks do you work with?</strong></p>
 
           <p>
-            We support most PHP & JavaScript based libraries, frameworks, and CMSs. You can reach out to us at <a href="mail:dev@greenpine.co" target="_blank">dev@greenpine.co</a> if you want to confirm if your projects are covered.
+            We support most PHP & JavaScript based libraries, frameworks, and CMSs. You can reach out to us at <a href="mailto:dev@greenpine.co" target="_blank">dev@greenpine.co</a> if you want to confirm if your projects are covered.
           </p>
         </div>
 
@@ -626,7 +665,7 @@
           <p><strong>I have more questions, how can I contact you?</strong></p>
 
           <p>
-            Feel free to send us an email at <a href="mail:hi@greenpine.co" target="_blank">hi@greenpine.co</a> - we will reply within 24 hours.
+            Feel free to send us an email at <a href="mailto:hi@greenpine.co" target="_blank">hi@greenpine.co</a> - we will reply within 24 hours.
           </p>
         </div>
       </div>
